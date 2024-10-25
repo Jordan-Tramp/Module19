@@ -199,3 +199,41 @@ font-size: 18px;
 border-bottom: 5px solid #ff6200;
 
 }
+
+@media only screen and (max-width: 1000px) {
+ #navigation{
+  display: none;
+ }
+ #icons {
+  margin-left: auto; 
+ }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20 
+  
+  }
+
+  #heroGrid {
+    display: grid;
+    grid-template-areas: "featuredProduct featuredProduct" "secondaryProduct CTA"; 
+
+
+  }
+
+  #categoryGrid {
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-rows: 1 fr;
+    grid-template-areas:
+    "bookcases"
+    "bedroom"
+    "patio"
+    "couches"
+    "desks"
+  }
+
+ 
+}
